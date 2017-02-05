@@ -19,6 +19,7 @@ Makefile.in
 project
 *.o
 *.aout
+*.a
 
 # test output
 /tests/**/*.log
