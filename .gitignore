@@ -24,4 +24,5 @@ project
 # test output
 /tests/**/*.log
 /tests/**/*.trs
+/tests/**/*.aout.test
 /tests/test-suite.log

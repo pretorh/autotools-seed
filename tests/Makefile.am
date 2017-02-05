@@ -1,7 +1,7 @@
 # programs to compile for tests
 check_PROGRAMS =
 check_PROGRAMS += project-test.aout
-check_PROGRAMS += factorial-tests.aout
+check_PROGRAMS += factorial.aout.test
 
 TESTS =
 TESTS += $(check_PROGRAMS)
@@ -18,5 +18,8 @@ EXTRA_DIST = $(TESTS)
 project_test_aout_SOURCES = project-test.c
 
 # compile
-factorial_tests_aout_SOURCES = factorial-tests.c
-factorial_tests_aout_LDADD = ../src/libfactorial.a
+factorial_aout_test_SOURCES = factorial-tests.c
+factorial_aout_test_LDADD = ../src/libfactorial.a
+
+# use tap driver for tests
+TEST_LOG_DRIVER = $(top_srcdir)/build-aux/tap-driver.sh

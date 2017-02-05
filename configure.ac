@@ -11,5 +11,6 @@ AC_CONFIG_FILES([Makefile src/Makefile tests/Makefile])
 AC_PROG_CC()
 AC_PROG_RANLIB
 AM_PROG_AR
+AC_REQUIRE_AUX_FILE([tap-driver.sh])
 
 AC_OUTPUT
