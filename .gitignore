@@ -1,0 +1,24 @@
+# temp/backup files
+*.swp
+
+# autotools
+Makefile
+Makefile.in
+/config.log
+/config.status
+/aclocal.m4
+/autom4te.cache/
+/build-aux/
+/configure
+/src/config.h*
+/src/.deps
+/src/stamp-h1
+
+# build output files
+project
+*.o
+
+# test output
+/tests/**/*.log
+/tests/**/*.trs
+/tests/test-suite.log
