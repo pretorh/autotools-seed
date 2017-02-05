@@ -13,10 +13,12 @@ Makefile.in
 /src/config.h*
 /src/.deps
 /src/stamp-h1
+/tests/.deps
 
 # build output files
 project
 *.o
+*.aout
 
 # test output
 /tests/**/*.log
